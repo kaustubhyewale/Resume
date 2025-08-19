@@ -7,126 +7,147 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f4f6f8;
-      color: #333;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #000;
     }
     header {
-      background: #2c3e50;
-      color: white;
       text-align: center;
-      padding: 2rem;
+      padding: 20px;
+      border-bottom: 2px solid #000;
     }
-    section {
-      padding: 2rem;
-      max-width: 900px;
+    header h1 {
+      margin: 5px 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 3px 0;
+      font-size: 14px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      max-width: 1000px;
       margin: auto;
+      padding: 20px;
+      gap: 20px;
     }
-    h1, h2 {
-      margin: 0.5rem 0;
+    .left, .right {
+      padding: 10px;
     }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      margin: 1rem 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    h2 {
+      border-bottom: 1px solid #000;
+      padding-bottom: 5px;
+      margin-top: 20px;
+      font-size: 18px;
     }
     ul {
-      padding-left: 20px;
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    ul li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    .job-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .company-date {
+      font-size: 13px;
+      color: #444;
+      margin-bottom: 5px;
     }
     .download-btn {
       display: inline-block;
       margin-top: 10px;
-      padding: 10px 15px;
-      background: #2c3e50;
+      padding: 8px 12px;
+      background: #000;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s;
+      border-radius: 4px;
+      font-size: 14px;
     }
     .download-btn:hover {
-      background: #1a242f;
+      background: #333;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Kaustubh Yewale</h1>
-    <p>Full Stack Engineer | Email: kaustubhyewale88888@gmail.com | Phone: +91-8888815051</p>
-    <p>Pune | <a href="https://linkedin.com/in/kaustubhyewale" target="_blank" style="color:white;">LinkedIn</a> | <a href="https://github.com/kaustubhyewale" target="_blank" style="color:white;">GitHub</a></p>
+    <p>Full Stack Engineer</p>
+    <p>Email: kaustubhyewale88888@gmail.com | Phone: +91-8888815051 | Pune</p>
+    <p><a href="https://linkedin.com/in/kaustubhyewale">LinkedIn</a> | <a href="https://github.com/kaustubhyewale">GitHub</a></p>
     <a href="My Resume.pdf" download class="download-btn">Download PDF Resume</a>
   </header>
 
-  <section>
-    <div class="card">
-      <h2>About Me</h2>
-      <p>A Full stack engineer with strong experience in backend system design, development, and maintenance. Experienced in building scalable services based on event-driven architecture. Hands-on with cloud-native technologies using major public cloud providers like GCP & Azure.</p>
-    </div>
-
-    <div class="card">
-      <h2>Work Experience</h2>
-      <p><b>Software Dev & Engineering Staff - 2</b> | Credit Suisse | 02/2023 – Present</p>
-      <ul>
-        <li>Led Spring Boot upgrade to 2.7.0 across services, ensuring seamless tech integration.</li>
-        <li>Resolved critical bugs, improving auto-matching by 15% and reducing manual work.</li>
-        <li>Implemented Securitas/Vault for stronger security across components.</li>
-        <li>Migrated services to OpenJDK 11, eliminating licensing costs.</li>
-        <li>Maintained 11 production releases with zero post-release issues.</li>
-        <li>Designed & developed POC for 6 microservices to propose new cash management product.</li>
-      </ul>
-      <p><b>Full Stack Engineer</b> | Cognizant | 11/2020 – 01/2023</p>
-      <ul>
-        <li>Developed event-driven microservices for Macy’s Unified Order Platform leveraging Google Pub/Sub.</li>
-        <li>Integrated REST APIs with domain & third-party services.</li>
-        <li>Debugged & fixed 100+ bugs across environments (QA, UAT, PROD).</li>
-        <li>Optimized services, reducing execution time by 32%.</li>
-        <li>Worked with DevOps on Spinnaker, Jenkins, and GCP deployments.</li>
-      </ul>
-    </div>
-
-    <div class="card">
+  <div class="container">
+    <div class="left">
       <h2>Skills</h2>
       <ul>
-        <li>Core Java, Java 8, Spring Boot, Microservices</li>
-        <li>REST API, GCP, Azure, MySQL, MongoDB</li>
-        <li>JUnit, Mockito, Git, Maven, Gradle</li>
-        <li>Google Pub/Sub, Kafka, SonarQube</li>
-        <li>Spinnaker, CICD, Jenkins, Swagger</li>
+        <li>Core Java, Java 8, Spring Boot</li>
+        <li>Microservices, REST API</li>
+        <li>GCP, Azure, MySQL, MongoDB</li>
+        <li>JUnit, Mockito</li>
+        <li>Git, Maven, Gradle</li>
+        <li>Google Pub/Sub, Kafka</li>
+        <li>Spinnaker, CICD, Jenkins</li>
+        <li>SonarQube, Swagger</li>
         <li>JavaScript, Agile/Scrum</li>
       </ul>
-    </div>
 
-    <div class="card">
       <h2>Certificates</h2>
       <ul>
         <li>Google – Associate Cloud Engineer</li>
-        <li>Microsoft – Azure Fundamentals (AZ-900), AI Fundamentals (AI-900)</li>
+        <li>Microsoft – Azure Fundamentals (AZ-900)</li>
+        <li>Microsoft – AI Fundamentals (AI-900)</li>
         <li>Cognizant – Accredited Full Stack Engineer</li>
       </ul>
-    </div>
 
-    <div class="card">
-      <h2>Projects</h2>
-      <ul>
-        <li><b>Hi-Tech ATM Security System</b> – IoT system providing unmanned ATM security using sensors and motors.</li>
-        <li><b>Mr Dusty</b> – Automated solar panel cleaning module using IoT.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Education</h2>
-      <p>BE - Computer Engineering (2016 – 2020)<br>
-      Sinhgad Institute of Technology & Science (First class with Distinction)</p>
-    </div>
-
-    <div class="card">
       <h2>Achievements</h2>
       <ul>
         <li>Represented Maharashtra – Chess</li>
         <li>General Secretary – Sinhgad Institute of Technology & Science</li>
       </ul>
     </div>
-  </section>
+
+    <div class="right">
+      <h2>About Me</h2>
+      <p>A Full stack engineer with strong experience in backend system design, development, and maintenance. Experienced in building scalable services based on event-driven architecture. Hands-on with cloud-native technologies using major public cloud providers like GCP & Azure.</p>
+
+      <h2>Work Experience</h2>
+      <div>
+        <p class="job-title">Software Dev & Engineering Staff - 2</p>
+        <p class="company-date">Credit Suisse | 02/2023 – Present</p>
+        <ul>
+          <li>Led Spring Boot upgrade to 2.7.0 across services ensuring seamless integration.</li>
+          <li>Resolved critical bugs improving auto-matching by 15% and reducing manual work.</li>
+          <li>Implemented Securitas/Vault for stronger security.</li>
+          <li>Migrated services to OpenJDK 11, eliminating licensing costs.</li>
+          <li>Maintained 11 production releases with zero post-release issues.</li>
+          <li>Developed POC for 6 microservices proposing new cash management product.</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="job-title">Full Stack Engineer</p>
+        <p class="company-date">Cognizant | 11/2020 – 01/2023</p>
+        <ul>
+          <li>Built event-driven microservices for Macy’s Unified Order Platform using Google Pub/Sub.</li>
+          <li>Integrated REST APIs with domain & third-party services.</li>
+          <li>Debugged & fixed 100+ bugs across environments (QA, UAT, PROD).</li>
+          <li>Optimized services reducing execution time by 32%.</li>
+          <li>Collaborated with DevOps on Spinnaker, Jenkins, and GCP deployments.</li>
+        </ul>
+      </div>
+
+      <h2>Education</h2>
+      <p>BE - Computer Engineering (2016 – 2020)<br>
+      Sinhgad Institute of Technology & Science (First class with Distinction)</p>
+    </div>
+  </div>
 </body>
 </html>
