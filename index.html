@@ -6,86 +6,131 @@
   <title>Resume - Kaustubh Yewale</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
       background: #fff;
-      color: #000;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
     }
     header {
       text-align: center;
-      padding: 20px;
-      border-bottom: 2px solid #000;
+      margin-bottom: 30px;
     }
     header h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    header h2 {
       margin: 5px 0;
-      font-size: 28px;
+      font-size: 18px;
+      font-weight: normal;
+      color: #555;
     }
     header p {
       margin: 3px 0;
       font-size: 14px;
+      color: #666;
     }
-    .container {
-      display: grid;
-      grid-template-columns: 30% 70%;
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-      gap: 20px;
+    .section {
+      margin-bottom: 30px;
     }
-    .left, .right {
-      padding: 10px;
-    }
-    h2 {
-      border-bottom: 1px solid #000;
+    .section h2 {
+      font-size: 20px;
+      color: #2c3e50;
+      border-bottom: 2px solid #2c3e50;
       padding-bottom: 5px;
-      margin-top: 20px;
-      font-size: 18px;
+      margin-bottom: 15px;
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-      margin: 0;
-    }
-    ul li {
-      margin-bottom: 8px;
-      font-size: 14px;
+    .job {
+      margin-bottom: 20px;
     }
     .job-title {
       font-weight: bold;
-      margin-top: 10px;
+      font-size: 16px;
+      color: #000;
     }
     .company-date {
-      font-size: 13px;
+      font-size: 14px;
       color: #444;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 6px;
+      font-size: 14px;
     }
     .download-btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 8px 12px;
-      background: #000;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #2c3e50;
       color: #fff;
       text-decoration: none;
       border-radius: 4px;
       font-size: 14px;
     }
     .download-btn:hover {
-      background: #333;
+      background: #1a242f;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Kaustubh Yewale</h1>
-    <p>Full Stack Engineer</p>
-    <p>Email: kaustubhyewale88888@gmail.com | Phone: +91-8888815051 | Pune</p>
-    <p><a href="https://linkedin.com/in/kaustubhyewale">LinkedIn</a> | <a href="https://github.com/kaustubhyewale">GitHub</a></p>
-    <a href="My Resume.pdf" download class="download-btn">Download PDF Resume</a>
-  </header>
-
   <div class="container">
-    <div class="left">
+    <header>
+      <h1>Kaustubh Yewale</h1>
+      <h2>Full Stack Engineer</h2>
+      <p>Email: kaustubhyewale88888@gmail.com | Phone: +91-8888815051 | Pune</p>
+      <p><a href="https://linkedin.com/in/kaustubhyewale">LinkedIn</a> | <a href="https://github.com/kaustubhyewale">GitHub</a></p>
+      <a href="My Resume.pdf" download class="download-btn">Download PDF Resume</a>
+    </header>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>A Full stack engineer with strong experience in backend system design, development, and maintenance. Experienced in building scalable services based on event-driven architecture. Hands-on with cloud-native technologies using major public cloud providers like GCP & Azure.</p>
+    </div>
+
+    <div class="section">
+      <h2>Work Experience</h2>
+      <div class="job">
+        <p class="job-title">Software Dev & Engineering Staff - 2</p>
+        <p class="company-date">Credit Suisse | Feb 2023 – Present</p>
+        <ul>
+          <li>Led Spring Boot upgrade to 2.7.0 across services ensuring seamless integration.</li>
+          <li>Resolved critical bugs improving auto-matching by 15% and reducing manual work.</li>
+          <li>Implemented Securitas/Vault for stronger security.</li>
+          <li>Migrated services to OpenJDK 11, eliminating licensing costs.</li>
+          <li>Maintained 11 production releases with zero post-release issues.</li>
+          <li>Developed POC for 6 microservices proposing new cash management product.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <p class="job-title">Full Stack Engineer</p>
+        <p class="company-date">Cognizant | Nov 2020 – Jan 2023</p>
+        <ul>
+          <li>Built event-driven microservices for Macy’s Unified Order Platform using Google Pub/Sub.</li>
+          <li>Integrated REST APIs with domain & third-party services.</li>
+          <li>Debugged & fixed 100+ bugs across environments (QA, UAT, PROD).</li>
+          <li>Optimized services reducing execution time by 32%.</li>
+          <li>Collaborated with DevOps on Spinnaker, Jenkins, and GCP deployments.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
       <h2>Skills</h2>
       <ul>
         <li>Core Java, Java 8, Spring Boot</li>
@@ -98,7 +143,9 @@
         <li>SonarQube, Swagger</li>
         <li>JavaScript, Agile/Scrum</li>
       </ul>
+    </div>
 
+    <div class="section">
       <h2>Certificates</h2>
       <ul>
         <li>Google – Associate Cloud Engineer</li>
@@ -106,47 +153,20 @@
         <li>Microsoft – AI Fundamentals (AI-900)</li>
         <li>Cognizant – Accredited Full Stack Engineer</li>
       </ul>
+    </div>
 
+    <div class="section">
+      <h2>Education</h2>
+      <p>BE - Computer Engineering (2016 – 2020)<br>
+      Sinhgad Institute of Technology & Science (First class with Distinction)</p>
+    </div>
+
+    <div class="section">
       <h2>Achievements</h2>
       <ul>
         <li>Represented Maharashtra – Chess</li>
         <li>General Secretary – Sinhgad Institute of Technology & Science</li>
       </ul>
-    </div>
-
-    <div class="right">
-      <h2>About Me</h2>
-      <p>A Full stack engineer with strong experience in backend system design, development, and maintenance. Experienced in building scalable services based on event-driven architecture. Hands-on with cloud-native technologies using major public cloud providers like GCP & Azure.</p>
-
-      <h2>Work Experience</h2>
-      <div>
-        <p class="job-title">Software Dev & Engineering Staff - 2</p>
-        <p class="company-date">Credit Suisse | 02/2023 – Present</p>
-        <ul>
-          <li>Led Spring Boot upgrade to 2.7.0 across services ensuring seamless integration.</li>
-          <li>Resolved critical bugs improving auto-matching by 15% and reducing manual work.</li>
-          <li>Implemented Securitas/Vault for stronger security.</li>
-          <li>Migrated services to OpenJDK 11, eliminating licensing costs.</li>
-          <li>Maintained 11 production releases with zero post-release issues.</li>
-          <li>Developed POC for 6 microservices proposing new cash management product.</li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="job-title">Full Stack Engineer</p>
-        <p class="company-date">Cognizant | 11/2020 – 01/2023</p>
-        <ul>
-          <li>Built event-driven microservices for Macy’s Unified Order Platform using Google Pub/Sub.</li>
-          <li>Integrated REST APIs with domain & third-party services.</li>
-          <li>Debugged & fixed 100+ bugs across environments (QA, UAT, PROD).</li>
-          <li>Optimized services reducing execution time by 32%.</li>
-          <li>Collaborated with DevOps on Spinnaker, Jenkins, and GCP deployments.</li>
-        </ul>
-      </div>
-
-      <h2>Education</h2>
-      <p>BE - Computer Engineering (2016 – 2020)<br>
-      Sinhgad Institute of Technology & Science (First class with Distinction)</p>
     </div>
   </div>
 </body>
